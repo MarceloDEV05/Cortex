@@ -1,11 +1,17 @@
+import React from 'react'
+import {Link} from 'react-router-dom'
 import './App.css'
-import img from './assets/uma_interface_simples_com_cores_pretas_e_verdes_para_o_app_Cortex_de_gestão_de_agenda__tarefas_e_finanças-removebg-preview.png'
+import imgSession1 from './assets/uma_interface_simples_com_cores_pretas_e_verdes_para_o_app_Cortex_de_gestão_de_agenda__tarefas_e_finanças-removebg-preview.png'
+import imgSessionTodo from './assets/Subtítulo-removebg-preview.png'
+
+
+
 
 function App() {
 
   return (
-    <div id="app" className="">
-      <header className='bg-conic(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 58%, rgba(0,230,123,1) 99%); mt-5 h-[50px] items-center flex justify-around'>
+    <div id="app" className='bg-gradient-'>
+      <header className=' mt-5 h-[50px] items-center flex justify-around'>
         <h1 id='name' className="text-3xl text-white ">Cortex</h1>
 
         <nav className='flex text-white gap-6'>
@@ -25,12 +31,19 @@ function App() {
         </article>
 
         <aside id='img-session1'>
-          <img src={img} alt="" className='rounded-full' />
+          <img src={imgSession1} alt="" className='rounded-full' />
         </aside>
       </section>
 
-      <section id='session-todo' className=''>
-          
+      <section id='session-todo' className='flex justify-around items-center'>
+            <aside>
+              <img src={imgSessionTodo} alt="imgSessionTodo" className='w-[350px]' />
+            </aside>
+
+            <article>
+              <h1 className='text-white text-4xl font-bold'>Cortex TO-DO</h1>
+              <p className='text-white max-w-[600px]'> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis autem non sequi, nam voluptas eligendi corporis reiciendis asperiores eveniet pariatur natus earum, impedit placeat voluptatum. Recusandae quidem nulla adipisci velit?</p>
+            </article>
       </section>
     </div>
   )

@@ -6,6 +6,7 @@ import App from './App.jsx'
 import './style/inpt.css'
 
 
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
