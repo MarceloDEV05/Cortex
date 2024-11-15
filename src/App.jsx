@@ -3,9 +3,7 @@ import {Link} from 'react-router-dom'
 import './App.css'
 import imgSession1 from './assets/uma_interface_simples_com_cores_pretas_e_verdes_para_o_app_Cortex_de_gestão_de_agenda__tarefas_e_finanças-removebg-preview.png'
 import imgSessionTodo from './assets/Subtítulo-removebg-preview.png'
-
-
-
+import PageTodo from './pages/pageTodo'
 
 function App() {
 
@@ -15,7 +13,7 @@ function App() {
         <h1 id='name' className="text-3xl text-white ">Cortex</h1>
 
         <nav className='flex text-white gap-6'>
-          <a href="#" className=' hover:border-b-[1px] '>to do</a>
+          <Link to="/todo" className=' hover:border-b-[1px] '>to do</Link>
           <a href="#" className=' hover:border-b-[1px] '>finanças</a>
           <a href="#" className=' hover:border-b-[1px] '>agenda</a>
           <a href="#" className=' hover:border-b-[1px] '>planos</a>
@@ -45,6 +43,7 @@ function App() {
               <p className='text-white max-w-[600px]'> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis autem non sequi, nam voluptas eligendi corporis reiciendis asperiores eveniet pariatur natus earum, impedit placeat voluptatum. Recusandae quidem nulla adipisci velit?</p>
             </article>
       </section>
+
     </div>
   )
 }
