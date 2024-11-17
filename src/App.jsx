@@ -1,9 +1,9 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import './App.css'
 import imgSession1 from './assets/uma_interface_simples_com_cores_pretas_e_verdes_para_o_app_Cortex_de_gestão_de_agenda__tarefas_e_finanças-removebg-preview.png'
 import imgSessionTodo from './assets/Subtítulo-removebg-preview.png'
-import PageTodo from './pages/pageTodo'
+import NavBar from './components/navbar.jsx'
 
 function App() {
 
@@ -12,14 +12,8 @@ function App() {
       <header className=' mt-5 h-[50px] items-center flex justify-around'>
         <h1 id='name' className="text-3xl text-white ">Cortex</h1>
 
-        <nav className='flex text-white gap-6'>
-          <Link to="/todo" className=' hover:border-b-[1px] '>to do</Link>
-          <a href="#" className=' hover:border-b-[1px] '>finanças</a>
-          <a href="#" className=' hover:border-b-[1px] '>agenda</a>
-          <a href="#" className=' hover:border-b-[1px] '>planos</a>
-          <a href="#" className=' hover:border-b-[1px] '>sobre</a>
-          <a href="#" className=' hover:border-b-[1px] '>cadastre-se</a>
-        </nav>
+        <NavBar/>
+
       </header>
 
       <section id='app-session1' className='mt-40 flex items-center justify-around'>
