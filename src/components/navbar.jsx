@@ -1,15 +1,18 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function NavBar() {
+   const location = useLocation()
+   const columnLayout = location.pathname === '/todo'
    return (
 
-    <nav className='flex text-white gap-6'>
-    <Link to="/" className=' hover:border-b-[1px] '>Home</Link>
-    <Link to="/todo" className=' hover:border-b-[1px] '>To Do</Link>
-    <Link to="/finanças" className=' hover:border-b-[1px] '>Finanças</Link>
-    <Link to="/agenda" className=' hover:border-b-[1px] '>Agenda</Link>
-    <Link to="/planos" className=' hover:border-b-[1px] '>Planos</Link>
-    <Link to="/planos" className=' hover:border-b-[1px] '>Cadastre-se</Link>
+    
+   <nav className={` ${columnLayout ? 'flex text-white flex-col space-y-4 ml-10' : 'flex space-x-5 text-white'}`}>
+    <Link to="/" className=''>Home</Link>
+    <Link to="/todo" className=''>To Do</Link>
+    <Link to="/finanças" className=''>Finanças</Link>
+    <Link to="/agenda" className=''>Agenda</Link>
+    <Link to="/planos" className=''>Planos</Link>
+    <Link to="/cadastro" className=''>Cadastre-se</Link>
 
   </nav>
 
