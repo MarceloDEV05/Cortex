@@ -4,6 +4,7 @@ import imgSession1 from './assets/uma_interface_simples_com_cores_pretas_e_verde
 import imgSessionTodo from './assets/Subtítulo-removebg-preview.png'
 import NavBar from './components/navbar.jsx'
 
+
 function App() {
 
   return (
@@ -18,7 +19,8 @@ function App() {
       <section id='app-session1' className='mt-40 flex items-center justify-around'>
         <article>
           <h1 className='text-white text-4xl font-bold'>Bem vindo ao Cortex</h1>
-          <p className='text-white max-w-[600px]'> sit amet consectetur adipisicing elit. Velit, consequuntur incidunt, delectus vitae suscipit, temporibus ipsam at esse veniam animi sunt dolore perspiciatis numquam doloremque nemo provident officiis totam. Dicta?</p>
+          <p className='text-white max-w-[600px]'> sit amet consectetur adipisicing elit. Velit, consequuntur incidunt, delectus vitae suscipit, 
+            temporibus ipsam at esse veniam animi sunt dolore perspiciatis numquam doloremque nemo provident officiis totam. Dicta?</p>
         </article>
 
         <aside id='img-session1'>
@@ -31,9 +33,11 @@ function App() {
               <img src={imgSessionTodo} alt="imgSessionTodo" className='w-[350px]' />
             </aside>
 
-            <article>
+            <article className=''>
               <h1 className='text-white text-4xl font-bold'>Cortex TO-DO</h1>
-              <p className='text-white max-w-[600px]'> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis autem non sequi, nam voluptas eligendi corporis reiciendis asperiores eveniet pariatur natus earum, impedit placeat voluptatum. Recusandae quidem nulla adipisci velit?</p>
+              <p className='text-white max-w-[600px]'> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis autem non sequi,
+                 nam voluptas eligendi corporis reiciendis asperiores eveniet 
+                pariatur natus earum, impedit placeat voluptatum. Recusandae quidem nulla adipisci velit?</p>
             </article>
       </section>
 
