@@ -33,7 +33,9 @@ function PageTodo() {
             </div>
 
             <div id="boxForTask" className="z-99 bg-black/80 h-full w-full justify-center align-middle left-0 top-0 fixed">
-                <div id="boxTask" className="w-[300px] h-[400px] bg-white m-auto mt-[190px] rounded-[20px]"></div>
+                <div id="boxTask" className="w-[450px] h-[560px] bg-white m-auto mt-[90px] rounded-[20px]">
+                    
+                </div>
             </div>
         </div>
     )
