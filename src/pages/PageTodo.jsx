@@ -32,9 +32,18 @@ function PageTodo() {
             </section>
             </div>
 
-            <div id="boxForTask" className="z-99 bg-black/80 h-full w-full justify-center align-middle left-0 top-0 fixed">
+            <div id="boxForTask" className="z-99 bg-black/80 h-full w-full justify-center align-middle left-0 top-0 fixed ">
                 <div id="boxTask" className="w-[450px] h-[560px] bg-white m-auto mt-[90px] rounded-[20px]">
-                    
+                    <div className="pt-14">
+                        <h1 className="text-center font-bold text-3xl">Tarefas</h1>
+
+                        <aside id="inputs" className="mt-20 columns-1 text-center align-middle">
+                            <input type="text" className="border-2 w-[290px] pt-[10px] placeholder:align-middle" placeholder="Título da tarefa" /><br />
+
+                            <input type="text" className="border-2 w-[290px] mt-[15px] pt-[10px] placeholder:align-middle" placeholder="Descrição da tarefa (*opcional)" />
+                        </aside>
+
+                    </div>
                 </div>
             </div>
         </div>
