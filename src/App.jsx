@@ -3,18 +3,14 @@ import './App.css'
 import imgSession1 from './assets/uma_interface_simples_com_cores_pretas_e_verdes_para_o_app_Cortex_de_gestão_de_agenda__tarefas_e_finanças-removebg-preview.png'
 import imgSessionTodo from './assets/Subtítulo-removebg-preview.png'
 import NavBar from './components/navbar.jsx'
+import Header from './components/Header.jsx'
 
 
 function App() {
 
   return (
     <div id="app" className='bg-cover'>
-      <header className=' mt-5 h-[50px] items-center flex justify-around'>
-        <h1 id='name' className="text-3xl text-white ">Cortex</h1>
-
-        <NavBar/>
-
-      </header>
+      <Header/>
 
       <section id='app-session1' className='mt-40 flex items-center justify-around'>
         <article>

@@ -1,13 +1,17 @@
 import NavBar from "../components/navbar";
 import pngcentral from "../assets/1187525.png";
 import { useState} from 'react'
-import boxForTask from "../components/boxForTask";
+//import BoxForTask from "../components/boxForTask";
 
 
 
 function PageTodo() {
 
+    let tasks = []
+//task - consulta algum dado
+//setTask - para colocar dados
 
+//const [task, setTask] = useState([])
 
 
     return (
@@ -31,13 +35,19 @@ function PageTodo() {
 
                 <section className="">
                     <article className="fixed flex right-16 mt-40">
-                        <button id="addTask" onClick={boxForTask} className="bg-black text-green-600 text-4xl rounded-full
+                        <button id="addTask" className="bg-black text-green-600 text-4xl rounded-full
                          size-12 align-middle justify-center text-center">+</button>
                     </article>
             </section>
             </div>
+        
+            <BoxForTask />
+            
+        
+            <div className="hidden">
+                
+            </div>
 
-            <boxForTask />
         </div>
     )
 }
