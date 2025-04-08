@@ -1,7 +1,11 @@
+ import NavBar from "./navbar"
+ import Logo from "./Logo"
+ 
  function Header(){
     return(
-     <header className='h-[50px] items-center flex justify-around'>
-         <h1 id='name' className="text-3xl text-white ">Cortex</h1>
+      <header className="bg-cover h-[90px] flex items-center justify-around align-middle" >
+         <Logo/>
+         <NavBar/>
     </header>
     )
  }
