@@ -6,24 +6,8 @@ import App from './App.jsx'
 import './style/inpt.css'
 
 
-import PageTodo from './pages/pageTodo.jsx'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-  },
-
-  {
-    path: '/todo',
-    element: <PageTodo />
-  },
-]);
-
-
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <App/>
   </StrictMode>,
 )

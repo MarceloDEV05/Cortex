@@ -8,7 +8,7 @@ function NavBar() {
     
    <nav className={` ${columnLayout ? 'flex text-white flex-col space-y-4 ml-10' : 'flex space-x-5 text-white'}`}>
     <Link to="/" className=''>Home</Link>
-    <Link to="/todo" className=''>To Do</Link>
+    <Link to="/tasklist" className=''>Tarefas</Link>
     <Link to="/finanças" className=''>Finanças</Link>
     <Link to="/agenda" className=''>Agenda</Link>
     <Link to="/planos" className=''>Planos</Link>
