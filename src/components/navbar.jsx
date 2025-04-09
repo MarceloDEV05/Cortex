@@ -1,12 +1,10 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function NavBar() {
-   const location = useLocation()
-   const columnLayout = location.pathname === '/todo'
    return (
 
     
-   <nav className={` ${columnLayout ? 'flex text-white flex-col space-y-4 ml-10' : 'flex space-x-5 text-white'}`}>
+   <nav className='text-white flex gap-4'>
     <Link to="/" className=''>Home</Link>
     <Link to="/tasklist" className=''>Tarefas</Link>
     <Link to="/finanças" className=''>Finanças</Link>
