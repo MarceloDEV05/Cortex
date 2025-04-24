@@ -1,20 +1,30 @@
-import Img from '/src/assets/1187525.png'
-import ButtonPlus from './components/ButtonPlus'
+import Img from "/src/assets/1187525.png";
+import BtnOpenModal from "./components/BtnOpenModal";
+import ModalTask from "./components/ModalTask";
+import { useState } from "react";
 
-function List(){
-    return(
-        <div className="text-white flex w-full h-full text-center justify-center items-center">
+function List() {
+  const [modalOpen, setModalOpen] = useState(false)
+
+  return (
+    <div className="bg-[#18181b] h-[100vh] w-full flex flex-col">
+
+
+      <div className="justify-center items-center text-center m-auto flex flex-col ">
+
+        <img src={Img} alt="imagem da tarefa" />
+        <h1 className="text-3xl text-white">Você ainda não possui tarefas</h1>
+        <p className="text-white">Abra o Modal para adicionar uma tarefa</p>
+
+        <BtnOpenModal openModal={() => setModalOpen(true)}/>
          
-         <div className='justify-center text-center flex flex-col items-center'>
-            <img className='mt-[120px]' src={ Img } alt="imagemlista.png" />
-            <p className='text-2xl font-bold'>Adicione sua primeira tarefa</p>
-         </div>
-
+      </div>
       
-                <ButtonPlus/>
-         
-        </div>
-    )
+      <ModalTask openModal={modalOpen} close={()=>setModalOpen(false)}/>
+
+    </div>
+   
+  );
 }
 
-export default List
+export default List;

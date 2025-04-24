@@ -2,7 +2,7 @@ import Img1 from '/src/assets/uma_interface_simples_com_cores_pretas_e_verdes_pa
 
 function SectionImg(){
     return(
-         <img src={ Img1 } alt='imagem 1'/>
+     <img src={ Img1 } alt='imagem 1'/>
     )
 }
 

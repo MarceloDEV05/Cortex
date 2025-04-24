@@ -3,7 +3,7 @@
  
  function Header(){
     return(
-      <header className="bg-cover h-[90px] flex items-center justify-around align-middle" >
+      <header className="bg-cover border-b-2 bg-[#1b1b1b] h-[90px] fixed flex items-center justify-around align-middle w-full" >
          <Logo/>
          <NavBar/>
     </header>

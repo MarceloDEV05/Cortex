@@ -12,10 +12,3 @@
   font-family: poppins;
   
 }
-
-body{
-    background: linear-gradient(115deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 58%, rgba(0,230,123,1) 99%);
-    background-size: cover;
-    overflow: auto;
-    height: 100vh;
-  }
